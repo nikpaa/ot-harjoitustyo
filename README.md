@@ -9,4 +9,4 @@
 
 [Työaikakirjanpito](https://github.com/nikpaa/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
-[Määrittelydokumentti](https://github.com/nikpaa/ot-harjoitustyo/blob/master/dokumentaatio/vaatimuusmaarittely.md) 
+[Määrittelydokumentti](https://github.com/nikpaa/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md) 
