@@ -1,12 +1,42 @@
+# Python calculator implementation using reverse Polish notation
 
-## Viikko 1
 
-[gitlog.txt](https://github.com/nikpaa/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
-[komentorivi.txt](https://github.com/nikpaa/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+## Install
+1. Install dependencies with the command
 
-## Viikko 2
+```bash
+poetry install
+```
+    
+ 2. Run the initialization procedures with the command:
 
-[Työaikakirjanpito](https://github.com/nikpaa/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+```bash
+poetry run invoke build
+```
 
-[Määrittelydokumentti](https://github.com/nikpaa/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md) 
+## Commands
+
+### Launching the calculator
+
+Launch the calculator with the command:
+
+```bash
+poetry run invoke start
+```
+
+### Testing
+
+Tests are done using the command:
+
+```bash
+poetry run invoke test
+```
+
+### Test Coverage Report
+
+Test coverage report can be generated using the command:
+
+```bash
+poetry run invoke coverage-report
+```
