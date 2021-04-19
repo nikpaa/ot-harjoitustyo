@@ -3,3 +3,5 @@
 /laskarit/viikko2/unicafe/.pytest_cache
 /src/__pycache__/*
 poetry.lock
+.DS_Store
+.coverage
