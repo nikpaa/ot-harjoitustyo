@@ -6,7 +6,7 @@
 | 4.4   |  8   | Projektin aloittaminen: yksinkertainen laskintoiminnallisuus toteutettu |
 | 5.4   |  5   | Parempi virheenkäsittely ja toiminnalisuus usean operaation lausekkeille |
 | 19.4  |  10  | Tietokanta integroitu sovelluksiin eli perustoiminnallisuus laskuhistorialle toteutettu |
-| ----- |      |  |
+| 20.4  |  10  | Siistitty projektin hakemistoa ja korjattu .gitignore. Lisätty mahdollisuus linttaukseen |
 | ----- |      |  |
 | ----- |      |  |
 | ----- |      |  |
