@@ -1,7 +1,11 @@
 /laskarit/viikko2/unicafe/.coverage
 /laskarit/viikko2/unicafe/htmlcov
 /laskarit/viikko2/unicafe/.pytest_cache
-/src/__pycache__/*
-poetry.lock
+__pycache__
 .DS_Store
 .coverage
+.vscode
+htmlcov
+.pytest_cache
+*.pyc
+history.db
