@@ -1,6 +1,11 @@
 # Python calculator implementation using reverse Polish notation
 
 
+## Dokumentaatio
+
+- [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
+- [Arkkitehtuurikuvaus](./dokumentaatio/arkkitehtuuri.md)
+- [Työaikakirjanpito](./dokumentaatio/tuntikirjanpito.md)
 
 ## Install
 1. Install dependencies with the command
