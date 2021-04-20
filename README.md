@@ -1,7 +1,7 @@
 # Python calculator implementation using reverse Polish notation
 
 
-## Dokumentaatio
+## Documentation
 
 - [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
 - [Arkkitehtuurikuvaus](./dokumentaatio/arkkitehtuuri.md)
