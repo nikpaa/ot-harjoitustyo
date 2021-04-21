@@ -1,4 +1,7 @@
-# Python calculator implementation using reverse Polish notation
+# Python calculator
+
+This project contains a python calculator that uses [Reverse Polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) as its syntax.
+The project currently supports basic binary operations and has functionality to record user history.
 
 
 ## Documentation
