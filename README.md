@@ -45,3 +45,11 @@ Test coverage report can be generated using the command:
 ```bash
 poetry run invoke coverage-report
 ```
+
+### Linting
+
+Pylint report can be obtained using the command:
+
+```bash
+poetry run invoke lint
+```
