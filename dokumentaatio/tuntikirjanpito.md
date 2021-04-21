@@ -8,7 +8,7 @@
 | 19.4  |  10  | Tietokanta integroitu sovelluksiin eli perustoiminnallisuus laskuhistorialle toteutettu |
 | 20.4  |  10  | Siistitty projektin hakemistoa ja korjattu .gitignore. Lisätty mahdollisuus linttaukseen |
 | 20.4  |  3   | Luokka/pakkauskaavio tehty projektista. |
-| ----- |      |  |
+| 21.4  |  8   | Parannettu ohjelman toiminnallisuutta sekä käytettävyyttä. Lisätty mm. apukomentoja mahdollisten operaatioiden listaamiseen. |
 | ----- |      |  |
 | ----- |      |  |
 | ----- |      |  |
