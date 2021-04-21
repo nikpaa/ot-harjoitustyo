@@ -1,24 +1,28 @@
-import history
-from parse import parse_expression
+from history import add_operation_to_db, create_table, clear_table
+from parse import parse_input
 
 
-print("Calculator launched.")
-history.create_table()
-history.clear_table()
+print("Calculator launched. Type 'help' for a list of commands.")
+create_table()
 
 while True:
     try:
-        operation = input("")
-        result = parse_expression(operation)
-        history.add_operation_to_db(operation, result)
-        print(result)
-        question = input("Do you want to print history (y, n)?")
-        if question == "y":
-            history.print_history()
+        operation = input("> ")
+        (advance, result) = parse_input(operation)
+        if not advance:
+            break
+
+        if result != None:
+            add_operation_to_db(operation, result)
+            print(result)
+
     except Exception as e:
         print(e)
-        question = input("Do you want to print history (y, n)?")
-        if question == "y":
-            history.print_history()
+        print("Type 'help' for a list of commands.")
+
+save_question = input("Save history? (y/n) ")
+if save_question != "y":
+    clear_table()
+
     
     
