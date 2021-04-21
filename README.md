@@ -13,12 +13,6 @@
 ```bash
 poetry install
 ```
-    
- 2. Run the initialization procedures with the command:
-
-```bash
-poetry run invoke build
-```
 
 ## Commands
 
