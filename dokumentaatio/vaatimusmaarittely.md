@@ -5,9 +5,9 @@
 Sovellus on laskin, joka toimii käänteisen puolalaisen notaation esitysmuodon mukaisesti. Sovellusta käytetään komentoriviltä.
 
 ## Suunnitellut perustoiminnallisuudet
-- Tukee tavallisimpia operaattoreita, kuten esimerkiksi +, -, / ja *. (tehty)
+- Tukee tavallisimpia operaattoreita, kuten esimerkiksi +, -, / ja *. (**tehty**)
 
-- Muistaa käyttäjän laskuhistorian. Tuloksia on mahdollista tallentaa rekistereihin sekä aiempia laskutoimituksia on mahdollista hakea. (osittain tehty)
+- Muistaa käyttäjän laskuhistorian. Tuloksia on mahdollista tallentaa rekistereihin sekä aiempia laskutoimituksia on mahdollista hakea. (**tehty**)
 
 
 ## Jatkokehitysideoita
