@@ -10,7 +10,7 @@
 | 20.4  |  3   | Luokka/pakkauskaavio tehty projektista. |
 | 21.4  |  8   | Parannettu ohjelman toiminnallisuutta sekä käytettävyyttä. Lisätty mm. apukomentoja mahdollisten operaatioiden listaamiseen. |
 | 22.4  |  2   | Paranneltu laskuhistorian printtauksen formationtia |
-| ----- |      |  |
+| 26.4 |  2    | Paranneltu testikattavuutta |
 | ----- |      |  |
 | ----- |      |  |
 | ----- |      |  | 
