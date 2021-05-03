@@ -1,7 +1,6 @@
 from history import add_operation_to_db, create_table, clear_table
 from parse import parse_input
 
-
 print("Calculator launched. Type 'help' for a list of commands.")
 create_table()
 

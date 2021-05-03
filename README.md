@@ -1,7 +1,7 @@
 # Python calculator
 
 This project contains a python calculator that uses [Reverse Polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) as its syntax.
-The project currently supports basic binary operations and has functionality to record user history.
+The project currently supports basic binary operations as well as exp and log and has functionality to record user history.
 
 
 ## Documentation

@@ -1,4 +1,4 @@
-from operation import Operation
+from operation import BinaryOperation, UnaryOperation
 import history
 
 def parse_input(input_str: str) -> (bool, str):
@@ -12,7 +12,8 @@ def parse_input(input_str: str) -> (bool, str):
 
     if input_str.lower() == "operations":
         print("Supported operations are:")
-        for op in Operation("+").get_supported_operations():
+        operations = BinaryOperation("+").get_supported_operations() + UnaryOperation("exp").get_supported_operations()
+        for op in operations:
             print(op)
         return (True, None)
 
@@ -36,11 +37,17 @@ def parse_expression_rec(first_num: float, expression: str) -> float:
     if len(expression) == 0:
         return first_num
 
-    (second_num, rest) = parse_num(expression)
-    (operation, rest) = parse_op(rest)
-    result = operation.compute(first_num, second_num)
+    # try parsing a number, if it fails parse a unary operation
+    try:
+        (second_num, rest) = parse_num(expression)
+        (operation, rest) = parse_bin_op(rest)
+        result = operation.compute(first_num, second_num)
+    except ValueError:
+        (operation, rest) = parse_un_op(expression)
+        result = operation.compute(first_num)
 
     return parse_expression_rec(result, rest)
+
 
 
 def parse_token(expression: str) -> (str, str):
@@ -59,7 +66,12 @@ def parse_num(expression: str) -> (float, str):
     return (float(num_as_string), rest)
 
 
-def parse_op(expression: str) -> (Operation, str):
+def parse_un_op(expression: str) -> (UnaryOperation, str):
     (op_as_string, rest) = parse_token(expression)
 
-    return (Operation(op_as_string), rest)
+    return (UnaryOperation(op_as_string), rest)
+
+def parse_bin_op(expression: str) -> (BinaryOperation, str):
+    (op_as_string, rest) = parse_token(expression)
+
+    return (BinaryOperation(op_as_string), rest)
