@@ -11,5 +11,5 @@ Sovellus on laskin, joka toimii käänteisen puolalaisen notaation esitysmuodon 
 
 
 ## Jatkokehitysideoita
-- Monimutkaisempia operaatiota, esimerkiksi neliöjuuri, eksponentti ja logaritmi.
+- Monimutkaisempia operaatiota, esimerkiksi neliöjuuri, eksponentti ja logaritmi (**osittain tehty**)
 - Mahdollisuus tarkkoihin arvoihin eli tuki vakiohin kuten e tai pii.
