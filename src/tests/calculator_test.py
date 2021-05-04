@@ -35,3 +35,5 @@ class TestOperation(unittest.TestCase):
 class TestParsing(unittest.TestCase):
     def test_numberparsing(self):
         self.assertEqual(parse.parse_num("33.5 4 +"), (33.5, "4 +"))
+    def test_inputparsing(self):
+        self.assertEqual(parse.parse_input("5 exp 2 /"), (True, str(math.exp(5)/2)))
