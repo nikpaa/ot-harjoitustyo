@@ -1,5 +1,5 @@
 from errors import CalculatorError
-from math import exp, log
+import math
 
 class Operation:
     def get_supported_operations(self) -> list:
@@ -18,14 +18,13 @@ class UnaryOperation(Operation):
 
     def compute(self, num1: float) -> float:
         if self.__type_of_operation == "exp":
-            return exp(num1)
-        elif self.__type_of_operation == "ln":
+            return math.exp(num1)
+        if self.__type_of_operation == "ln":
             if num1 > 0:
-                return log(num1)
-            else:
-                raise CalculatorError(f"Logarithm of non-positive number")
-        else:
-            raise CalculatorError(f"Operation '{self.__type_of_operation}' is unsupported")
+                return math.log(num1)
+            raise CalculatorError(f"Logarithm of non-positive number")
+
+        raise CalculatorError(f"Operation '{self.__type_of_operation}' is unsupported")
 
 
 class BinaryOperation(Operation):
@@ -38,13 +37,13 @@ class BinaryOperation(Operation):
     def compute(self, num1: float, num2: float) -> float:
         if self.__type_of_operation == "+":
             return num1 + num2
-        elif self.__type_of_operation == "-":
+        if self.__type_of_operation == "-":
             return num1 - num2
-        elif self.__type_of_operation == "/":
+        if self.__type_of_operation == "/":
             if num2 == 0:
                 raise CalculatorError("Division by zero")
             return num1 / num2
-        elif self.__type_of_operation == "*":
+        if self.__type_of_operation == "*":
             return num1*num2
-        else:
-            raise CalculatorError(f"Operation '{self.__type_of_operation}' is unsupported")
+
+        raise CalculatorError(f"Operation '{self.__type_of_operation}' is unsupported")
