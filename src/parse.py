@@ -2,6 +2,11 @@ from operation import BinaryOperation, UnaryOperation
 import history
 
 def parse_input(input_str: str) -> (bool, str):
+
+    """ Parses user input and calls relevant functions based on the input.
+
+    """
+
     if input_str.lower() == "help":
         print("Commands:\n")
         print("'operations' lists the supported operations")
@@ -34,6 +39,13 @@ def parse_expression(expression: str) -> float:
 
 
 def parse_expression_rec(first_num: float, expression: str) -> float:
+    """ Parses the expression recursively
+
+        Returns
+            to itself recursively until parsing is done
+
+    """
+
     if len(expression) == 0:
         return first_num
 
