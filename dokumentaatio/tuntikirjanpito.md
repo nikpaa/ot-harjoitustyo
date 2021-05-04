@@ -12,5 +12,5 @@
 | 22.4  |  2   | Paranneltu laskuhistorian printtauksen formationtia |
 | 26.4  |  2   | Paranneltu testikattavuutta |
 | 3.5   |  8   | Implementoitu laskimeen tuki neperin luvulle ja luonnolliselle logaritmille |
-| ----- |      |  |
+| 4.5   |  4   | Paranneltu testikattavuutta ja korjattu pylinttiä |
 | ----- |      |  | 
