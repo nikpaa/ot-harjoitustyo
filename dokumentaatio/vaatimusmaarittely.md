@@ -2,14 +2,15 @@
 
 ## Sovelluksen tarkoitus
 
-Sovellus on laskin, joka toimii käänteisen puolalaisen notaation esitysmuodon mukaisesti. Sovellusta käytetään komentoriviltä.
+Sovellus on laskin, joka toimii [Käänteisen puolalaisen notaation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) esitysmuodon mukaisesti. Sovellusta käytetään komentoriviltä.
 
-## Suunnitellut perustoiminnallisuudet
-- Tukee tavallisimpia operaattoreita, kuten esimerkiksi +, -, / ja *. (**tehty**)
+## Perusversion tarjoama toiminnallisuus
+- Tukee tavallisimpia operaattoreita, kuten esimerkiksi +, -, / ja *.
 
-- Muistaa käyttäjän laskuhistorian. Tuloksia on mahdollista tallentaa rekistereihin sekä aiempia laskutoimituksia on mahdollista hakea. (**tehty**)
+- Tukee myös muutamia monimutkaisempia operaatioita, eksponenttia ja logaritmia.
+
+- Muistaa käyttäjän laskuhistorian. Tuloksia on mahdollista tallentaa rekistereihin sekä aiempia laskutoimituksia on mahdollista hakea.
 
 
 ## Jatkokehitysideoita
-- Monimutkaisempia operaatiota, esimerkiksi neliöjuuri, eksponentti ja logaritmi (**osittain tehty**)
-- Mahdollisuus tarkkoihin arvoihin eli tuki vakiohin kuten e tai pii.
+- Monimutkaisempia operaatiota, esimerkiksi neliöjuuri.
