@@ -15,20 +15,20 @@ def parse_input(input_str: str) -> (bool, str):
 
     if input_str.lower() == "operations":
         print("Supported operations are:")
-        operations = BinaryOperation("+").get_supported_operations() + UnaryOperation("exp").get_supported_operations()
-        for op in operations:
-            print(op)
+        operations = BinaryOperation("+").get_supported_operations()
+        operations += UnaryOperation("exp").get_supported_operations()
+        for oper in operations:
+            print(oper)
         return (True, None)
 
     if input_str.lower() == "history":
         history.print_history()
         return (True, None)
 
-    elif input_str.lower() == "exit":
+    if input_str.lower() == "exit":
         return (False, None)
 
-    else:
-        return (True, str(parse_expression(input_str)))
+    return (True, str(parse_expression(input_str)))
 
 
 def parse_expression(expression: str) -> float:

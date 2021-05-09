@@ -1,9 +1,10 @@
 import unittest
-from operation import BinaryOperation, UnaryOperation
-import parse
-from errors import CalculatorError
-from history import create_table, add_operation_to_db, print_history, clear_table
 import math
+import parse
+from operation import BinaryOperation, UnaryOperation
+from errors import CalculatorError
+from history import create_table, add_operation_to_db, clear_table
+
 
 class TestOperation(unittest.TestCase):
     def test_plus(self):

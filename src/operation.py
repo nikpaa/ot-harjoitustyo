@@ -1,5 +1,5 @@
-from errors import CalculatorError
 import math
+from errors import CalculatorError
 
 class Operation:
     """ Class for handling operations
@@ -32,7 +32,7 @@ class UnaryOperation(Operation):
         if self.__type_of_operation == "ln":
             if num1 > 0:
                 return math.log(num1)
-            raise CalculatorError(f"Logarithm of non-positive number")
+            raise CalculatorError("Logarithm of non-positive number")
 
         raise CalculatorError(f"Operation '{self.__type_of_operation}' is unsupported")
 

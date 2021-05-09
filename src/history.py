@@ -6,7 +6,9 @@ db.isolation_level = None
 def create_table():
     """Funcion that creates the database for storing the history
     """
-    db.execute("CREATE TABLE IF NOT EXISTS History (id INTEGER PRIMARY KEY, Operation TEXT, Result FLOAT);")
+    db.execute("""
+    CREATE TABLE IF NOT EXISTS History (id INTEGER PRIMARY KEY, Operation TEXT, Result FLOAT);
+    """)
 
 def add_operation_to_db(operation, result):
     """Add operation and its result to history
