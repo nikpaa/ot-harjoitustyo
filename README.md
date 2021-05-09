@@ -6,9 +6,11 @@ The project currently supports basic binary operations as well as exp and log an
 
 ## Documentation
 
+- [Käyttöohje](./dokumentaatio/kayttoohje.md)
 - [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
 - [Arkkitehtuurikuvaus](./dokumentaatio/arkkitehtuuri.md)
 - [Työaikakirjanpito](./dokumentaatio/tuntikirjanpito.md)
+- [Testausdokumentti](./dokumentaatio/testaus.md)
 
 ## Install
 1. Install dependencies with the command
