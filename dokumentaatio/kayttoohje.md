@@ -18,4 +18,4 @@ Nyt ohjelman voi käynnistää komennolla:
 poetry run invoke start
 ```
 
-**Suosittelen kuitenkin käynnistämään ohjelman manuaalisesti tiedostosta "calculator.py", koska poetry ei tue askelpalautinta.**
+**Suosittelen kuitenkin käynnistämään ohjelman manuaalisesti suorittamalla komennon `python3 src/calculator.py`, koska poetry ei tue askelpalautinta.**
