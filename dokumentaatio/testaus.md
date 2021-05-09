@@ -4,7 +4,7 @@ Ohjelmaa on testattu unittestilla.
 
 ## Testauskattavuus
 
-Käyttöliittymäkerrosta lukuunottamatta sovelluksen testauksen haarautumakattavuus on 100%
+Komentoliittymää lukuunottamatta sovelluksen testauksen haarautumakattavuus on yli 93%
 
 ## Järjestelmätestaus
 

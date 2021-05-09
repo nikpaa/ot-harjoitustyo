@@ -8,9 +8,6 @@ class Operation:
     def get_supported_operations(self) -> list:
         return self.supported_operations
 
-    def __str__(self) -> str:
-        return self.__type_of_operation
-
 
 class UnaryOperation(Operation):
     """ Subclass for handling unary operations.
@@ -35,6 +32,9 @@ class UnaryOperation(Operation):
             raise CalculatorError(f"Logarithm of non-positive number")
 
         raise CalculatorError(f"Operation '{self.__type_of_operation}' is unsupported")
+
+    def __str__(self) -> str:
+        return self.__type_of_operation
 
 
 class BinaryOperation(Operation):
@@ -69,3 +69,6 @@ class BinaryOperation(Operation):
             return num1*num2
 
         raise CalculatorError(f"Operation '{self.__type_of_operation}' is unsupported")
+
+    def __str__(self) -> str:
+        return self.__type_of_operation
