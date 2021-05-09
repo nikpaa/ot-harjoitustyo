@@ -2,9 +2,7 @@ from operation import BinaryOperation, UnaryOperation
 import history
 
 def parse_input(input_str: str) -> (bool, str):
-
-    """ Parses user input and calls relevant functions based on the input.
-
+    """ Parses user input and calls relevant functions based on the input
     """
 
     if input_str.lower() == "help":
@@ -34,16 +32,20 @@ def parse_input(input_str: str) -> (bool, str):
 
 
 def parse_expression(expression: str) -> float:
+    """ Parses an expression and evaluates it
+
+        Returns
+            the value of the expression
+    """
     (first_num, rest) = parse_num(expression)
     return parse_expression_rec(first_num, rest)
 
 
 def parse_expression_rec(first_num: float, expression: str) -> float:
-    """ Parses the expression recursively
+    """ Parses the rest of the expression given the first number
 
         Returns
-            to itself recursively until parsing is done
-
+            the value of the expression
     """
 
     if len(expression) == 0:
@@ -63,6 +65,11 @@ def parse_expression_rec(first_num: float, expression: str) -> float:
 
 
 def parse_token(expression: str) -> (str, str):
+    """ Parses a token, ie. a sequence of characters separated by whitespace
+
+        Returns
+            The parsed token and the rest of the string to be parsed
+    """
     current_ind = 0
     current_string = ""
     while current_ind < len(expression) and expression[current_ind] != " ":
@@ -73,17 +80,32 @@ def parse_token(expression: str) -> (str, str):
 
 
 def parse_num(expression: str) -> (float, str):
+    """ Parses a number from the beginning of an expression
+
+        Returns
+            The parsed number and the rest of the string to be parsed
+    """
     (num_as_string, rest) = parse_token(expression)
 
     return (float(num_as_string), rest)
 
 
 def parse_un_op(expression: str) -> (UnaryOperation, str):
+    """ Parses a unary operation from the beginning of an expression
+
+        Returns
+            The parsed operation and the rest of the string to be parsed
+    """
     (op_as_string, rest) = parse_token(expression)
 
     return (UnaryOperation(op_as_string), rest)
 
 def parse_bin_op(expression: str) -> (BinaryOperation, str):
+    """ Parses a binary operation from the beginning of an expression
+
+        Returns
+            The parsed operation and the rest of the string to be parsed
+    """
     (op_as_string, rest) = parse_token(expression)
 
     return (BinaryOperation(op_as_string), rest)
