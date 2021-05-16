@@ -16,3 +16,4 @@
 | 4.5   |  2   | Docstring aloitettu |
 | 9.5   |  5   | Dokumentaatiota paranneltu |
 | 10.5  |  2   | Paranneltu testikattavuutta ja korjattu pylinttiä |
+| yht   |  72  |
